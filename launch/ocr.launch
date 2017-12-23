@@ -1,0 +1,10 @@
+<launch>
+
+	<node name="ocr" pkg="sylib_ros" type="ocr" output="screen" >
+		<param name="tessdata_path" value="../" />
+		<param name="language" value="eng" />
+		<!-- <param name="language" value="jpn" /> -->
+		<param name="image_path" value="../Pictures/sample.png" />
+	</node>
+
+</launch>
